@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>女神</title>
+    <meta charset="UTF-8">
+    <title>她是女神</title>
 </head>
+
 <body>
-	<div>幸福就是一觉醒来,窗外依然阳光灿烂.</div>
+<div style="margin:0 auto;width:200px">
+<h2>《江村即事》</h2>
 
-	<div>
-		<h1>这是第二个功能</h1>
-		<p>git ./index.html 放到门口</p>
-		<p>git commit -m "若能爱你,命何足惜!"</p>
-	</div>
-	<div>命运如此,休论公道</div>
-	<div>hahahahaha 这是第4个版本</div>
+<p>钓罢归来不系船,</p>
+<p>江村月落正堪眠.</p>
 
-<script>
-	
-	//tab
-	//我是hhr_001 上面的代码 
-</script>
+<p>纵然一夜风吹去,</p>
+<p>只在芦花浅水边.</p>
 
-	
+    <div>幸福就是一觉醒来,窗外依然阳光灿烂.</div>
+    <div>
+        <h1>这是第二个功能</h1>
+        <p>git ./index.html 放到门口</p>
+        <p>git commit -m "若能爱你,命何足惜!"</p>
+    </div>
+    <div>命运如此,休论公道</div>
+    <div>hahahahaha 这是第4个版本</div>
+    </div>
+    <script>
+        //tab 
+        //我是hhr_001 上面的代码 
+        if (!window.localStorage) {
+            alert("浏览器支持localstorage");
+        } else {
+            var storage = window.localStorage;
+            //写入a字段
+            storage["itcast"] = 123;
+            //写入b字段
+            storage.b = 1;
+            //写入c字段
+            storage.setItem("c", 3);
+            console.log(storage.c);
+            // console.log(typeof storage["a"]);
+            // console.log(typeof storage["b"]);
+            // console.log(typeof storage["c"]);
+            /*分割线*/
+            storage.a = 4;
+            console.log(storage.a);
+        }
+        var storage = window.localStorage;
+        storage.a = 1;
+        storage.setItem("c", 3);
+        console.log(storage);
+        console.log(storage);
+        storage.removeItem('c');
+    </script>
+
+
 </body>
+
 </html>
